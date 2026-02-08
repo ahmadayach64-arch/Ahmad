@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headiing-color: #383848;
+    --text-color: #9a9a9a;
+    --bg-color: #f4f2ed;
+
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: var(--bg-color);
+}
+
+h2,
+h3 {
+    color: var(--headiing-color);
+}
+
+p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#menu {
+    padding: 3rem 0;
+}
+
+#menu .heading {
+    text-align: center;
+
+}
+
+#menu .heading h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#menu .heading p {
+    margin-top: 5px;
+}
+
+#menu .heading .menu-buttons {
+    margin: 2rem;
+      
+
+}
+
+#menu .heading .menu-buttons .fillter-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 5px;
+    background-color: var(--headiing-color);
+    color: #fff;
+
+    cursor: pointer;
+ 
+    /*esba3-->  */
+      transition:0.5s;
+
+}
+#menu .heading .menu-buttons .fillter-btn:active{
+    /* animation: press 0.2s; */
+      transform: scale(0.95);
+
+}
+#menu .heading .menu-buttons .fillter-btn:hover{
+    color:firebrick;
+    /* 1em 16px  type of 5at sans serif */
+     font: 1em sans-serif;  
+}
+
+#menu .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+}
+
+ #menu .row .menuItem {
+    display: flex;
+    margin: 35px 0;
+
+}  
+#menu .row .menuItem img {
+    border-radius: 50%;
+     width: 90px;
+    height: 90px;  
+    /* bdal soura nafes chakla */
+     object-fit: cover;
+     margin-top: 30px;  
+}
+
+
+ #menu .row .menuItem .item-content h3 {
+    font-size: 20px; 
+     font-weight: 500; 
+    /* //krmel span tdal absloute */
+     position: relative;
+    border-bottom: 1px dashed var(--text-color);
+     padding-bottom: 6px;  
+     margin-bottom: 10px; 
+
+ }
+  #menu .row .menuItem .item-content h3 span{
+    position: absolute;
+    right: 0;
+  }
+
+
+  /* //telphone */
+/* @media screen and (max-width:400px){
+    .all{
+        display: block;
+    }
+    body{
+        background: black;
+    }
+} */
+/* //ipad */
+ /* @media screen and (min-width:401px) and (max-width:600px){
+    body{
+        background: blue;;
+    }
+    
+} 
+ @media screen and(min-width:601px) and(max-width:900px){
+    body{
+        background:green;
+    }
+}  */
